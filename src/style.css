@@ -1,0 +1,20 @@
+:root {
+    --bg-color-light: #f0f0f0; /* Light mode background color */
+    --text-color-light: #333; /* Light mode text color */
+    --bg-color-dark: #333; /* Dark mode background color */
+    --text-color-dark: #fff; /* Dark mode text color */
+}
+
+body {
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: background-color 0.5s, color 0.5s;
+    padding: 0 12px;
+    user-select: none;
+    overflow-y: auto;
+}
+
+.dark-mode {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
